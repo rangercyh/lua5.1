@@ -36,11 +36,14 @@ LUALIB_API int (luaopen_math) (lua_State *L);
 #define LUA_DBLIBNAME	"debug"
 LUALIB_API int (luaopen_debug) (lua_State *L);
 
+#define LUA_LFSLIBNAME   "lfs"
+LUALIB_API int (luaopen_lfs) (lua_State *L);
+
 #define LUA_LOADLIBNAME	"package"
 LUALIB_API int (luaopen_package) (lua_State *L);
 
 #define LUA_STRUCTLIBNAME "struct"
-LUALIB_API int(luaopen_struct) (lua_State *L);
+LUALIB_API int (luaopen_struct) (lua_State *L);
 
 
 /* open all previous libraries */
